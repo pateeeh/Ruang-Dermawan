@@ -1,0 +1,23 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Local databases and runtime files
+*.sqlite
+*.sqlite3
+*.db
+*.log
+/storage/
+/uploads/
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

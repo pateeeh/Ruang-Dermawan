@@ -1,0 +1,437 @@
+/* Responsif: tablet */
+@media (max-width: 1050px) {
+    .zakat-content {
+        grid-template-columns: 1fr;
+    }
+
+    .zakat-help {
+        position: static;
+    }
+
+    .header-inner {
+        flex-wrap: wrap;
+        padding-block: 14px;
+    }
+
+    .interior-header-inner {
+        gap: 14px;
+    }
+
+    .main-nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .statistics-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .steps-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Responsif: ponsel */
+@media (max-width: 700px) {
+    .container {
+        width: min(100% - 32px, var(--container-width));
+    }
+
+    .admin-login-card {
+        padding: 26px 22px;
+        border-radius: var(--radius-medium);
+    }
+
+    .section {
+        padding-block: 60px;
+    }
+
+    .zakat-page {
+        padding-bottom: 40px;
+    }
+
+    .zakat-intro {
+        padding-block: 34px;
+    }
+
+    .zakat-intro p {
+        max-width: 420px;
+        margin-inline: auto;
+        font-size: 13px;
+    }
+
+    .zakat-content {
+        width: min(100% - 32px, var(--container-width));
+        gap: 16px;
+        padding-top: 20px;
+    }
+
+    .zakat-panel {
+        padding: 18px;
+    }
+
+    .transaction-page {
+        width: min(100% - 32px, 760px);
+        padding-top: 20px;
+    }
+
+    .transaction-card {
+        padding: 20px 18px;
+    }
+
+    .transaction-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .fidyah-info-dialog-heading {
+        padding: 20px 18px 14px;
+    }
+
+    .fidyah-info-dialog-heading h2 {
+        font-size: 18px;
+    }
+
+    .fidyah-info-content {
+        padding-inline: 18px;
+    }
+
+    .fidyah-info-dialog-actions {
+        padding: 8px 18px 18px;
+    }
+
+    .zakat-calculator-fields,
+    .zakat-donor-fields {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .zakat-result strong {
+        font-size: 18px;
+    }
+
+    .header-inner {
+        position: relative;
+        min-height: auto;
+        gap: 12px;
+    }
+
+    .interior-header-inner {
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 8px 12px;
+        padding-block: 9px;
+    }
+
+    .interior-header-inner .brand-logo {
+        max-width: 190px;
+        height: 48px;
+    }
+
+    .interior-header-nav {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 4px;
+        padding-top: 2px;
+        border-top: 1px solid var(--color-border);
+    }
+
+    .interior-header-nav a {
+        padding: 7px 5px;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .interior-home-link {
+        grid-column: 2;
+        grid-row: 1;
+        min-height: 36px;
+        padding: 7px 10px;
+    }
+
+    .interior-page-banner-inner {
+        min-height: 176px;
+        gap: 14px;
+        padding-block: 26px;
+    }
+
+    .interior-page-heading h1 {
+        font-size: clamp(25px, 7vw, 32px);
+    }
+
+    .interior-page-heading p {
+        margin-top: 7px;
+        font-size: 12px;
+    }
+
+    .interior-banner-mark {
+        width: 68px;
+        height: 68px;
+        flex-basis: 68px;
+        border-radius: 20px;
+    }
+
+    .interior-banner-mark .material-symbols-outlined {
+        font-size: 36px;
+    }
+
+    .brand {
+        font-size: 17px;
+    }
+
+    .brand-logo {
+        max-width: 210px;
+        height: 54px;
+    }
+
+    .header-actions {
+        gap: 6px;
+    }
+
+    .admin-link {
+        display: none;
+    }
+
+    .button-small {
+        min-height: 38px;
+        padding: 8px 11px;
+        font-size: 11px;
+    }
+
+    .menu-toggle {
+        display: grid;
+        order: 2;
+        width: 42px;
+        height: 42px;
+        flex: 0 0 42px;
+        align-content: center;
+        justify-items: center;
+        gap: 5px;
+        margin-left: auto;
+        padding: 0;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-small);
+        background: #fff;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        width: 19px;
+        height: 2px;
+        border-radius: 2px;
+        background: var(--color-primary-dark);
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .menu-toggle[aria-expanded="true"] span:first-child {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle[aria-expanded="true"] span:last-child {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .header-actions {
+        order: 3;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: calc(100% + 8px);
+        right: 0;
+        left: 0;
+        z-index: 11;
+        display: none;
+        width: auto;
+        align-items: stretch;
+        justify-content: stretch;
+        gap: 4px;
+        flex-wrap: initial;
+        padding: 8px;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-medium);
+        background: #fff;
+        box-shadow: var(--shadow-large);
+    }
+
+    .main-nav.is-open {
+        display: grid;
+    }
+
+    .main-nav a {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .desktop-donation-link {
+        display: none;
+    }
+
+    .main-nav .mobile-donation-link {
+        display: inline-flex;
+        margin-top: 4px;
+        padding: 11px 12px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .campaign-slider-section {
+        padding-top: 18px;
+    }
+
+    .campaign-slider {
+        height: 330px;
+        border-radius: var(--radius-medium);
+    }
+
+    .campaign-slide > img {
+        object-position: 62% center;
+    }
+
+    .campaign-slide-shade {
+        background: linear-gradient(0deg, rgba(16, 57, 56, 0.92) 0%, rgba(24, 75, 73, 0.7) 55%, rgba(10, 45, 44, 0.12) 100%);
+    }
+
+    .campaign-slide-copy {
+        top: auto;
+        right: 22px;
+        bottom: 24px;
+        left: 22px;
+        width: auto;
+        gap: 9px;
+        transform: none;
+    }
+
+    .campaign-slide-copy > strong {
+        max-width: 480px;
+        font-size: clamp(27px, 8vw, 36px);
+    }
+
+    .campaign-slide-copy > span:not(.campaign-slide-label):not(.campaign-slide-cta) {
+        font-size: 13px;
+    }
+
+    .campaign-slider-arrow {
+        top: 16px;
+        width: 36px;
+        height: 36px;
+        font-size: 25px;
+        transform: none;
+    }
+
+    .campaign-slider-previous {
+        right: 58px;
+        left: auto;
+    }
+
+    .campaign-slider-next {
+        right: 14px;
+    }
+
+    .campaign-slider-dots {
+        padding-block: 14px 18px;
+    }
+
+    .giving-shortcuts-section {
+        padding-bottom: 26px;
+    }
+
+    .giving-shortcuts {
+        gap: 9px;
+    }
+
+    .giving-shortcut {
+        min-height: 100px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 6px;
+        border-radius: var(--radius-small);
+        font-size: 12px;
+    }
+
+    .giving-shortcut > .material-symbols-outlined {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+        font-size: 21px;
+    }
+
+    .giving-shortcut-arrow {
+        display: none;
+    }
+
+    .statistics-grid,
+    .impact-statistics-grid,
+    .category-grid,
+    .campaign-grid,
+    .steps-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        padding: 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 32px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .section-heading-left {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .category-card {
+        padding: 25px;
+    }
+
+    .campaign-body h3 {
+        min-height: auto;
+    }
+
+    .cta-banner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 28px 24px;
+    }
+
+    .footer-grid {
+        gap: 28px;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+    }
+}
+
+/* Mengurangi animasi jika pengguna mengaktifkan preferensi tersebut. */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}

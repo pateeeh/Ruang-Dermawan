@@ -1,0 +1,199 @@
+.transaction-page {
+    width: min(100% - 48px, 760px);
+    margin-inline: auto;
+    padding-top: 36px;
+}
+
+.transaction-card {
+    padding: 30px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-small);
+}
+
+.transaction-icon {
+    display: grid;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 14px;
+    place-items: center;
+    border-radius: var(--radius-small);
+    background: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    font-size: 28px;
+}
+
+.transaction-card h2 {
+    margin: 0 0 8px;
+    color: var(--color-primary-dark);
+    font-size: 24px;
+}
+
+.transaction-card > p {
+    color: var(--color-text-muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.transaction-lead {
+    margin: 0 0 22px;
+}
+
+.transaction-summary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 20px;
+    margin: 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.transaction-summary > div {
+    min-width: 0;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.transaction-summary dt {
+    margin-bottom: 4px;
+    color: var(--color-text-muted);
+    font-size: 11px;
+}
+
+.transaction-summary dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.transaction-summary > div:nth-child(3) dd {
+    color: var(--color-primary-dark);
+    font-size: 18px;
+}
+
+.transaction-instructions,
+.transaction-success {
+    margin-top: 20px;
+    padding: 16px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-small);
+    background: var(--color-surface-soft);
+    color: var(--color-primary-dark);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.transaction-instructions p {
+    margin: 6px 0 0;
+}
+
+.transaction-warning {
+    color: var(--color-text-muted);
+    font-size: 11px;
+}
+
+.transaction-demo-instructions {
+    border-color: #efd7a5;
+    background: #fffaf0;
+}
+
+.transaction-demo-badge {
+    display: table;
+    margin-bottom: 12px;
+    padding: 5px 9px;
+    border-radius: var(--radius-small);
+    background: #fff0c9;
+    color: #704d12;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.demo-bank-details {
+    display: grid;
+    gap: 3px;
+    margin-top: 14px;
+    padding: 14px;
+    border: 1px dashed #d8c38f;
+    border-radius: var(--radius-small);
+    background: #fff;
+}
+
+.demo-bank-details span {
+    color: var(--color-text-muted);
+    font-size: 11px;
+}
+
+.demo-bank-details strong {
+    margin-bottom: 8px;
+    color: var(--color-text);
+    font-size: 13px;
+}
+
+.demo-bank-details strong:last-child {
+    margin-bottom: 0;
+}
+
+.demo-bank-details .demo-account-number {
+    color: var(--color-primary-dark);
+    font-size: 20px;
+    letter-spacing: 0.08em;
+}
+
+.demo-qris-placeholder {
+    display: grid;
+    width: 170px;
+    aspect-ratio: 1;
+    margin: 14px auto 4px;
+    place-items: center;
+    border: 8px solid #fff;
+    outline: 1px dashed #d8c38f;
+    background:
+        linear-gradient(45deg, #d9e9e1 25%, transparent 25%, transparent 75%, #d9e9e1 75%),
+        linear-gradient(45deg, #d9e9e1 25%, #fff 25%, #fff 75%, #d9e9e1 75%);
+    background-position: 0 0, 8px 8px;
+    background-size: 16px 16px;
+    color: var(--color-primary-dark);
+    text-align: center;
+}
+
+.demo-qris-placeholder span {
+    padding: 8px 12px;
+    border: 1px solid #c5dbd0;
+    border-radius: var(--radius-small);
+    background: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.transaction-demo-action {
+    display: grid;
+    justify-items: start;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.transaction-demo-action p {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: 11px;
+}
+
+.transaction-success {
+    border-color: #b8dfcf;
+    background: var(--color-primary-light);
+    font-weight: 700;
+}
+
+.transaction-demo-success {
+    line-height: 1.7;
+}
+
+.transaction-home-link {
+    width: 100%;
+    margin-top: 20px;
+}
+
